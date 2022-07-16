@@ -1,4 +1,40 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
+
+/* nav section */
+.nav-items {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-items > li {
+    padding: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 20px;
+}
+
+.logo {
+  width: 40px;
+}
+
+/* main section */
+.main {
+  padding: 20;
+}
+
+/* footer section */
+.footer {
+  padding: 20;
+}
+

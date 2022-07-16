@@ -14,46 +14,22 @@ Hints:
  */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
-function Header() {
-  return (
-    <header>
-      <nav>
-        <img src="./assets/images/react-logo.png" width="40px" />
-      </nav>
-    </header>
-  );
-}
-function Page() {
+import Header from './components/Header';
+import Footer from './components/Footer';
+import MainContent from './components/MainContent';
+
+function App() {
   return (
     <>
-      <h1>Fun facts about React</h1>
-      <ul>
-        <li>Was first introduced in 2013</li>
-        <li>Was originally created by Jordan Walke</li>
-        <li>Has well over 100K stars on Github</li>
-        <li>Is maintained by Facebook</li>
-        <li>Power thousands of enterprise apps, including mobile apps</li>
-      </ul>
+      <Header />
+      <MainContent />
+      <Footer />
     </>
   );
 }
 
-function Footer() {
-  return (
-    <footer>
-      <small>© 2022 Jobin development. All rights reserved.</small>
-    </footer>
-  );
-}
-
-ReactDOM.render(
-  <>
-    <Header />
-    <Page />
-    <Footer />
-  </>,
-  document.getElementById('root'),
-);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
 
