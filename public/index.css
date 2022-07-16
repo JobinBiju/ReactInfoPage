@@ -50,21 +50,21 @@ body {
 .main {
   padding: 20;
   background-color: #282d35;
-  height: 100vh;
+  height: calc(100vh - 20px);
 }
 
 .mainList {
-    list-style: none;
+  list-style: none;
 }
 
 .mainList li::before {
-    content: "\2022";  
-    color: aqua;
-    font-weight: bold; 
-    display: inline-block; 
-    width: 1em; 
-    margin-left: -1em; 
-    margin-bottom: 10px;
+  content: '\2022';
+  color: aqua;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  margin-bottom: 10px;
 }
 
 /* footer section */
