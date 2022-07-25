@@ -50,26 +50,49 @@ body {
 .main {
   padding: 20;
   background-color: #282d35;
-  height: calc(100vh - 20px);
+  height: calc(70vh);
 }
 
 .mainList {
-  list-style: none;
+  max-width: 400px;
 }
 
-.mainList li::before {
-  content: '\2022';
+.mainList > li {
+  padding-block: 5px;
+  line-height: 20px;
+}
+
+.mainList > li::marker {
   color: aqua;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.count-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.logo-bg {
+  width: 260px;
+  position: absolute;
+  top: 30%;
+  right: -130px;
+  filter: grayscale() opacity(10%);
 }
 
 /* footer section */
 .footer {
   padding: 20;
   background-color: #313641;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15;
+    height: 95px;
+  }
 }
 
